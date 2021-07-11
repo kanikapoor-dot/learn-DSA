@@ -17,11 +17,10 @@ int main() {
     cout << *p << " - '*p' return value of 'a' variable \n\n";
     cout << &p << " - '&p' return address of 'p' variable\n\n";
 
-    string b[5] = {"kani","ka["};
-
-    for(string d : b){
-        cout << d << " ";
-    }
+    int k; //not assigned
+    int *m = &k;
+    cout << k << " " << &k <<"\n" ;
+    cout << *m; //let see what is prints? ans filled with garbage value!
 
     return 0;
 }
